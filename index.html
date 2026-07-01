@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wasim Hassan | Research Informatics & GovTech</title>
+  <meta name="description" content="Wasim Hassan — researcher and practitioner in research informatics, data science, and government digital transformation. Based in Pakistan.">
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wasim Hassan",
+    "url": "https://wasimhassanpro.github.io",
+    "email": "wasim@enlystnow.com",
+    "jobTitle": "Researcher, Data Scientist, GovTech Practitioner",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Enlyst"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/wasimhassanpro",
+      "https://credly.com/users/enlyst",
+      "https://orcid.org/0009-0002-5227-4348",
+      "https://github.com/wasimhassanpro"
+    ],
+    "knowsAbout": [
+      "Research Informatics",
+      "Data Science",
+      "GovTech",
+      "Cloud Computing",
+      "Visual Impairment",
+      "Mathematics Education",
+      "Pakistan"
+    ],
+    "description": "Government officer. Doctoral researcher. Builder of cloud systems."
+  }
+  </script>
+
+  <style>
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --color-text-primary: #1a1a1a;
+      --color-text-secondary: #606060;
+      --color-text-tertiary: #a0a0a0;
+      --color-background-primary: #ffffff;
+      --color-background-secondary: #f8f8f8;
+      --color-border-tertiary: #e0e0e0;
+      --accent-primary: #3C3489;
+      --accent-green: #1D9E75;
+      --accent-blue: #2E5F8A;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: var(--color-background-primary);
+      color: var(--color-text-primary);
+      line-height: 1.6;
+    }
+
+    /* Typography */
+    .serif {
+      font-family: 'Georgia', 'Garamond', serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    a {
+      color: var(--accent-primary);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    /* Layout */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      margin: 120px 0;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-text-tertiary);
+      margin-bottom: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      gap: 3rem;
+      align-items: flex-start;
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
+
+    .hero-photo {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 200px;
+      background: linear-gradient(135deg, #888780 0%, #a8a6a0 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-name {
+      font-family: 'Georgia', serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: var(--color-text-primary);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-tagline {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-tagline-secondary {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      background: var(--color-text-primary);
+      color: white;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .social-link:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+
+    /* About Section */
+    .about-text {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--color-text-secondary);
+      max-width: 700px;
+    }
+
+    .about-text p {
+      margin-bottom: 1rem;
+    }
+
+    /* Credentials Section */
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .credential-card {
+      background: #D3D1C7;
+      color: #444;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .credential-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .credential-name {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .credential-detail {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+
+    .credentials-footer {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      text-align: center;
+      border: 1px dashed var(--color-border-tertiary);
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    /* Research Section */
+    .research-box {
+      background: #E1F5EE;
+      color: #085041;
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-green);
+    }
+
+    .research-title {
+      font-family: 'Georgia', serif;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .research-finding {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .research-collab {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.9;
+      font-style: italic;
+    }
+
+    /* Work Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: #D3D1C7;
+      color: #444;
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .project-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-meta {
+      font-size: 0.85rem;
+      opacity: 0.75;
+      font-family: 'Monaco', monospace;
+    }
+
+    /* Writing Section */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      background: #D3D1C7;
+      color: #444;
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .article-date {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-title {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Connect Section */
+    .connect-box {
+      background: #1a1916;
+      color: rgba(255,255,255,0.85);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .connect-email {
+      display: inline-block;
+      color: #1D9E75;
+      font-weight: 500;
+    }
+
+    .connect-link {
+      color: rgba(255,255,255,0.85);
+      text-decoration: underline;
+    }
+
+    .connect-statement {
+      margin-top: 1.5rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--color-border-tertiary);
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    nav a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-primary);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 120px;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--color-text-tertiary);
+      border-top: 1px solid var(--color-border-tertiary);
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .hero-name {
+        font-size: 2rem;
+      }
+
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1.1rem; }
+
+      nav ul {
+        gap: 1rem;
+        font-size: 0.8rem;
+      }
+
+      section {
+        margin: 80px 0;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-text-primary: #f0f0f0;
+        --color-text-secondary: #b0b0b0;
+        --color-text-tertiary: #606060;
+        --color-background-primary: #0f0f0f;
+        --color-background-secondary: #1a1a1a;
+        --color-border-tertiary: #333;
+      }
+
+      nav {
+        background: rgba(15,15,15,0.95);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-photo">
+        Photo
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-name serif">Wasim Hassan</h1>
+        <p class="hero-tagline">
+          Government officer. Doctoral researcher. Builder of cloud systems.
+        </p>
+        <p class="hero-tagline-secondary">
+          Researching how visual impairment intersects with mathematics education. Building government digital transformation platforms in Pakistan.
+        </p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/wasimhassanpro" class="social-link">LinkedIn</a>
+          <a href="https://credly.com/users/enlyst" class="social-link">Credly</a>
+          <a href="mailto:wasim@enlystnow.com" class="social-link">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section id="about">
+      <p class="section-label">About</p>
+      <div class="about-text">
+        <p>
+          I work at the intersection of government digital transformation, research informatics, and cloud architecture. My practice spans three areas: designing systems for government agencies, conducting doctoral research on accessibility in mathematics education, and building data infrastructure that connects institutions.
+        </p>
+        <p>
+          Currently focused on GovTech initiatives in Pakistan, with particular interest in how technology can serve government health, education, and revenue systems. My research centers on visual impairment and mathematics—why visually impaired students face barriers, and how to design better pedagogies.
+        </p>
+        <p>
+          I hold certifications in Google Cloud and Azure, speak Urdu and English, and have published work on research informatics and accessibility frameworks.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CREDENTIALS -->
+    <section id="credentials">
+      <p class="section-label">Certifications & Credentials</p>
+      <div class="credentials-grid">
+        <div class="credential-card">
+          <div class="credential-name">Google Cloud ACE</div>
+          <div class="credential-detail">Associate Cloud Engineer</div>
+          <div class="credential-detail">Active 2027</div>
+        </div>
+        <div class="credential-card">
+          <div class="credential-name">Microsoft CDL</div>
+          <div class="credential-detail">Cloud Data Fundamentals</div>
+          <div class="credential-detail">Active 2027</div>
+        </div>
+        <div class="credential-card">
+          <div class="credential-name">Data Analytics</div>
+          <div class="credential-detail">Professional Certificate</div>
+          <div class="credential-detail">Active 2028</div>
+        </div>
+      </div>
+      <div class="credentials-footer">
+        <strong>Full credential record</strong> — 214 verified credentials · 147 Credly badges · <a href="https://credly.com/users/enlyst">credly.com/users/enlyst</a>
+      </div>
+    </section>
+
+    <!-- SECTION 4: RESEARCH -->
+    <section id="research">
+      <p class="section-label">Research</p>
+      <div class="research-box">
+        <div class="research-title serif">Visual Impairment and Mathematics: A Pedagogical Study</div>
+        <div class="research-finding">
+          <strong>Finding:</strong> Students with visual impairment show statistically significant performance gaps in spatial reasoning tasks (r = 0.55), attributable primarily to instructional design rather than cognitive ability.
+        </div>
+        <div class="research-finding">
+          This work fills a gap in disability-inclusive education research and informs curriculum design for teachers in Pakistan and South Asia.
+        </div>
+        <div class="research-collab">
+          Open to research collaboration, institutional partnerships, and advisory conversations on accessibility in education.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: WORK -->
+    <section id="work">
+      <p class="section-label">Projects & Work</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-name">Tax Nexus</div>
+          <div class="project-meta">GovTech · AI enforcement · Python · PostgreSQL</div>
+          <p style="font-size: 0.9rem; margin-top: 0.75rem;">Professional tax enforcement platform for Punjab government. 69K registered companies.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-name">SECP MCP Server</div>
+          <div class="project-meta">Open Data · TypeScript · API · 124,094 companies</div>
+          <p style="font-size: 0.9rem; margin-top: 0.75rem;">Real-time company registry for Pakistani businesses. Integrated with Ministry and Power BI.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-name">MPDD Exam Guide</div>
+          <div class="project-meta">Civil Service · Education · 1,170 MCQs</div>
+          <p style="font-size: 0.9rem; margin-top: 0.75rem;">Comprehensive study guide for Pakistan's Mid-Career Professional Development examination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: WRITING -->
+    <section id="writing">
+      <p class="section-label">Writing & Scholarship</p>
+      <div class="articles-grid">
+        <div class="article-card">
+          <div class="article-date">Mar 2026</div>
+          <div class="article-title">Why Mathematics Fails Visually Impaired Students</div>
+        </div>
+        <div class="article-card">
+          <div class="article-date">Coming</div>
+          <div class="article-title">Building Tax Nexus: AI Enforcement for Pakistan's Tax System</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CONNECT -->
+    <section id="connect">
+      <p class="section-label">Let's Connect</p>
+      <div class="connect-box">
+        <div>
+          <a href="mailto:wasim@enlystnow.com" class="connect-email">wasim@enlystnow.com</a>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a href="https://linkedin.com/in/wasimhassanpro" class="connect-link">LinkedIn</a>
+          ·
+          <a href="https://github.com/wasimhassanpro" class="connect-link">GitHub</a>
+          ·
+          <a href="https://orcid.org/0009-0002-5227-4348" class="connect-link">ORCID</a>
+        </div>
+        <div class="connect-statement">
+          "Open to research collaboration, GovTech partnership, and advisory conversations."
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wasim Hassan. Built with intention. Last updated Jul 1, 2026.</p>
+  </footer>
+</body>
+</html>
